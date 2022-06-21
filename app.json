@@ -1,11 +1,18 @@
 {
   "expo": {
-    "name": "grs",
-    "slug": "grs",
-    "version": "1.0.0",
+    "name": "guanrushi",
+    "scheme": "guanrushi",
+    "slug": "guanrushi",
+    "description": "A cause for concern",
+    "privacy": "unlisted",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "guanrushi",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -19,9 +26,31 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.guanrushi.grs",
+      "buildNumber": "0.0.1",
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
     },
     "android": {
+      "package": "com.guanrushi.grs",
+      "versionCode": 1,
+      "userNextNotificationsApi": true,
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [{
+            "scheme": "guanrushi"
+          }],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
